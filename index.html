@@ -63,7 +63,7 @@
     </style>
 </head>
 <body>
-    <h1>Gerar Objeto</h1>
+    <h1>Gerar Atributo</h1>
     <label for="labelId">Label ID</label>
     <input id="labelId" placeholder="Digite o Label ID">
 
@@ -88,12 +88,12 @@
     <label for="vendorOwnership">Vendor Ownership</label>
     <input id="vendorOwnership" placeholder="Digite o valor para Vendor Ownership">
 
-    <button onclick="generateObject()">Gerar Objeto</button>
-    <button onclick="copyToClipboard()">Copiar Objeto</button>
+    <button onclick="generateObject()">Gerar Atributo</button>
+    <button onclick="copyToClipboard()">Copiar Atributo</button>
 
     <div id="result-container">
         <h2>Resultado:</h2>
-        <pre id="result">O objeto gerado será exibido aqui.</pre>
+        <pre id="result">O Atributo gerado será exibido aqui.</pre>
     </div>
 
     <script>
@@ -122,8 +122,8 @@
 
         function copyToClipboard() {
             const resultText = document.getElementById("result").textContent;
-            if (resultText === "O objeto gerado será exibido aqui.") {
-                alert("Por favor, gere o objeto antes de copiar.");
+            if (resultText === "O Atributo gerado será exibido aqui.") {
+                alert("Por favor, gere o Atributo antes de copiar.");
                 return;
             }
 
